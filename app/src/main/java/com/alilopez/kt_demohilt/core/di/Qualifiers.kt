@@ -1,10 +1,10 @@
 package com.alilopez.kt_demohilt.core.di
 
-import jakarta.inject.Qualifier
+import javax.inject.Qualifier
 
 @Qualifier
 @Retention(AnnotationRetention.BINARY)
-annotation class RickAndMortyRetrofit
+annotation class IssuesRetrofit
 
 @Qualifier
 @Retention(AnnotationRetention.BINARY)

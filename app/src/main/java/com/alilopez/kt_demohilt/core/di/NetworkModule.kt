@@ -13,11 +13,12 @@ import javax.inject.Singleton
 object NetworkModule {
     @Provides
     @Singleton
-    @JsonPlaceHolderRetrofit
-    fun provideRetrofit(): Retrofit {
+    @IssuesRetrofit
+    fun provideIssuesRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://jsonplaceholder.typicode.com/")
+            .baseUrl("http://10.0.2.2:8081/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
+
 }
